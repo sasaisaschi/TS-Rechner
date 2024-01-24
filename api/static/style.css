@@ -1,25 +1,27 @@
 body {
     font-family: 'Roboto', sans-serif;
-    padding-top: 20px; /* Verschiebt alles ein Stück nach unten */
+    padding-top: 22.5px; /* Reduziert von 30px auf 22.5px */
 }
 
 .title {
     text-align: center;
     text-decoration: underline;
-    font-size: 24px; /* Größe des Titels */
-    margin-bottom: 20px; /* Abstand unter dem Titel */
+    font-size: 27px; /* Reduziert von 36px auf 27px */
+    margin-bottom: 22.5px; /* Reduziert von 30px auf 22.5px */
 }
 
 .container {
-    width: 300px;
+    width: 337.5px; /* Reduziert von 450px auf 337.5px */
     margin: auto;
-    padding: 20px;
+    padding: 22.5px; /* Reduziert von 30px auf 22.5px */
 }
 
 label, select, button {
     display: block;
     width: 100%;
-    margin-bottom: 10px;
+    font-size: 13.5px; /* Reduziert von 18px auf 13.5px */
+    padding: 7.5px; /* Reduziert von 10px auf 7.5px */
+    margin-bottom: 11.25px; /* Reduziert von 15px auf 11.25px */
 }
 
 .result {
