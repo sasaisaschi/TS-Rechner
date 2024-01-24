@@ -1,4 +1,15 @@
-/* Beispiel für grundlegende Stilisierung */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px; /* Verschiebt alles ein Stück nach unten */
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 24px; /* Größe des Titels */
+    margin-bottom: 20px; /* Abstand unter dem Titel */
+}
+
 .container {
     width: 300px;
     margin: auto;

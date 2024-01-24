@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Vergütungsrechner</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
+        <h1 class="title">Vergütungsrechner für Berufsbetreuer</h1>
         <form method="post">
             <label for="group">Vergütungsgruppe:</label>
             <select name="group" id="group">
