@@ -1,0 +1,17 @@
+/* Beispiel für grundlegende Stilisierung */
+.container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+}
+
+label, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}

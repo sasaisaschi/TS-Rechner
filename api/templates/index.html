@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Vergütungsrechner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form method="post">
+            <label for="group">Vergütungsgruppe:</label>
+            <select name="group" id="group">
+                <option value="A" {% if selected.group == 'A' %}selected{% endif %}>A</option>
+                <option value="B" {% if selected.group == 'B' %}selected{% endif %}>B</option>
+                <option value="C" {% if selected.group == 'C' %}selected{% endif %}>C</option>
+            </select>
+
+            <label for="duration">Dauer der Betreuung:</label>
+            <select name="duration" id="duration">
+                <option value="In den ersten drei Monaten" {% if selected.duration == 'In den ersten drei Monaten' %}selected{% endif %}>In den ersten drei Monaten</option>
+                <option value="Im vierten bis sechsten Monat" {% if selected.duration == 'Im vierten bis sechsten Monat' %}selected{% endif %}>Im vierten bis sechsten Monat</option>
+                <option value="Im siebten bis zwölften Monat" {% if selected.duration == 'Im siebten bis zwölften Monat' %}selected{% endif %}>Im siebten bis zwölften Monat</option>
+                <option value="Im 13. bis 24. Monat" {% if selected.duration == 'Im 13. bis 24. Monat' %}selected{% endif %}>Im 13. bis 24. Monat</option>
+                <option value="Ab dem 25. Monat" {% if selected.duration == 'Ab dem 25. Monat' %}selected{% endif %}>Ab dem 25. Monat</option>
+            </select>
+
+            <label for="location">Gewöhnlicher Aufenthaltsort:</label>
+            <select name="location" id="location">
+                <option value="stationäre Einrichtung" {% if selected.location == 'stationäre Einrichtung' %}selected{% endif %}>stationäre Einrichtung</option>
+                <option value="andere Wohnform" {% if selected.location == 'andere Wohnform' %}selected{% endif %}>andere Wohnform</option>
+            </select>
+
+            <label for="wealth">Vermögensstatus:</label>
+            <select name="wealth" id="wealth">
+                <option value="mittellos" {% if selected.wealth == 'mittellos' %}selected{% endif %}>mittellos</option>
+                <option value="nicht mittellos" {% if selected.wealth == 'nicht mittellos' %}selected{% endif %}>nicht mittellos</option>
+            </select>
+
+            <button type="submit">Berechnen</button>
+        </form>
+        {% if result %}
+    <div class="result">
+        {{ result }}
+    </div>
+{% endif %}
+    </div>
+</body>
+</html>
