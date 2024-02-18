@@ -27,7 +27,8 @@ html {
 }
 
 .container {
-    max-width: 360.0px; /* Reduziert von 450px auf 337.5px */
+    width: 360.0px;
+    height: 100%;
     margin: 10px;
     padding: 5px;
     display: flex;
