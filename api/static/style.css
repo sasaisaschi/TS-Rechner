@@ -27,7 +27,7 @@ html {
 }
 
 .container {
-    width: 360.0px;
+    min-width: 360px;
     height: 100%;
     margin: 10px;
     padding: 5px;
